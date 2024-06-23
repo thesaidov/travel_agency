@@ -1,0 +1,24 @@
+@mixin flex( $gp: 0, $fd: row, $ai: center, $jc: center) {
+    display: flex;
+    gap: $gp;
+    flex-direction: $fd;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin grid($gtc, $gtr, $cg: 0, $rg: 0) {
+    display: grid;
+    grid-template-columns: $gtc;
+    grid-template-rows: $gtr;
+    column-gap: $cg;
+    row-gap: $rg;
+}
+$yellow: #FFC814;
+$darkblue: #22283C;
+@mixin btn($bkg: white, $cl: $darkblue) {
+    background-color: $bkg;
+    color: $cl;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+}
